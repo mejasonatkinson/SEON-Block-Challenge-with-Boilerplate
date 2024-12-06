@@ -1,0 +1,44 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "sbcwbb/sbc-w-boilerplate-block",
+  "version": "0.1.0",
+  "title": "SEON Block Challenge with Boilerplate",
+  "category": "design",
+  "icon": "layout",
+  "description": "Scaffolded Block with the Create Block package.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "align": [
+      "wide",
+      "full"
+    ]
+  },
+  "attributes": {
+    "image": {
+      "type": "string"
+    },
+    "heading": {
+      "type": "string"
+    },
+    "textarea": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "reverseLayout": {
+      "type": "boolean",
+      "default": false
+    }
+  },
+  "textdomain": "sbc-w-boilerplate-block",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}

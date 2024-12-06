@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap');
+
+// Temp for demo purposes only!!!
+
+.container {
+	max-width: 352px !important;
+}
+
+@media (min-width: 852px) {
+	.container {
+		max-width: 852px !important;
+	}
+}
+
+@media (min-width: 1280px) {
+	.container {
+		max-width: 1280px !important;
+	}
+}
+
+// mobile-first default styles
+
+.container {
+    padding-bottom: 60px;
+}
+
+.two-columns-block {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.image-column__image {
+	width: 100%;
+}
+
+.text-column__heading {
+	font-family: Sora;
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 31.5px;
+	text-align: left;
+	color: #141517;
+}
+
+.text-column__content {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	text-align: left;
+	color: #3D4047;
+	margin-bottom: 24px;
+}
+
+.text-column__cta-link {
+	font-family: Inter;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 24px;
+	text-align: left;
+	color: #3C72FF;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.text-column__cta-link:focus {
+	outline: none;
+}
+
+.text-column__cta-link-icon {
+	display: inline-block;
+	margin: 0 0 -2px 5px;
+}
+
+.components-base-control__field {
+	margin-bottom: 10px;
+}
+
+// tablet
+
+@media (min-width: 852px) {
+    .container {
+        padding-bottom: 80px;
+    }
+
+	.two-columns-block {
+		flex-direction: row;
+		gap: 64px;
+	}
+
+	.column {
+		flex: 1;
+		width: 50%;
+	}
+
+	.column--reverse {
+		flex-direction: row-reverse;
+	}
+
+	.image-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.text-column {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.text-column__heading {
+		font-size: 28px;
+		line-height: 36.4px;
+	}
+
+	.text-column__content {
+		font-size: 18px;
+		line-height: 27px;
+	}
+}
+
+// desktop
+
+@media (min-width: 1280px) {
+	.two-columns-block {
+		gap: 80px;
+	}
+
+	.text-column__heading {
+		font-size: 32px;
+		line-height: 41.6px;
+	}
+
+	.text-column__content {
+		font-size: 18px;
+		line-height: 27px;
+	}
+
+	.text-column__cta-link {
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
